@@ -18,6 +18,8 @@
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+export TARGET_G_ARCH=arm64
+
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -221,10 +223,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.x01bd
 
-# MTweaks & Spectrum
+# MTweaks
 PRODUCT_PACKAGES += \
-    MTweaks \
-    Spectrum
+    MTweaks 
+   
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -495,7 +497,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # Zenfone Parts
-PRODUCT_PACKAGES += \
-    ZenfoneParts
+#PRODUCT_PACKAGES += \
+   # ZenfoneParts
 
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)

@@ -532,10 +532,6 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">7</integer>
 
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-
     <!-- Whether the device has fingeprint sensor or not -->
     <bool name="config_hasFingerprintSensor">true</bool>
 
@@ -604,8 +600,9 @@
 
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
-
+    <bool name="config_dozeAmbientDisplayEnabled">true</bool>
     <!-- Whether device has a physical display cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
     
@@ -636,6 +633,8 @@
     <!-- Flag indicating whether we should enable smart battery. -->
      <bool name="config_smart_battery_available">true</bool>
 
+    <bool name="config_battery_info_available">true</bool>
+     
     <!-- Whether to enable smart clock feature -->
     <bool name="config_enableSmartClock">true</bool>
 
