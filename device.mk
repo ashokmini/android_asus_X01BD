@@ -293,6 +293,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# LiveDisplay native
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -506,7 +509,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # Zenfone Parts
-#PRODUCT_PACKAGES += \
-   # ZenfoneParts
+PRODUCT_PACKAGES += \
+    ZenfoneParts
 
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
