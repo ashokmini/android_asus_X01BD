@@ -61,8 +61,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam \
-    camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android 
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam 
+    vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.gbwhatsapp,com.snapchat.android 
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -245,6 +245,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+
+# Touch response
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qti.inputopts.enable=true \
+    persist.vendor.qti.inputopts.movetouchslop=0.6
 
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
