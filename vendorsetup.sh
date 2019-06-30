@@ -1,1 +1,1 @@
-add_lunch_combo ion_X01BD-userdebug
+add_lunch_combo descendant_X01BD-userdebug

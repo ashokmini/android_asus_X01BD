@@ -21,20 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Inherit some common IonOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/ion/config/common_full_phone.mk)
+$(call inherit-product, vendor/descendant/config/common_full_phone.mk)
 
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ion_X01BD
+PRODUCT_NAME := descendant_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M2
 PRODUCT_MANUFACTURER := asus
 
 # Official
-export ION_BUILD_TYPE= RELEASE
+#export ION_BUILD_TYPE= RELEASE
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
@@ -47,8 +47,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # ion maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ion.maintainer=Ashok_Varma
+#PRODUCT_PROPERTY_OVERRIDES += \
+   # ro.ion.maintainer=Ashok_Varma
 
 #buildprop
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=X01BD PRODUCT_NAME=X01BD
