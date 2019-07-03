@@ -51,7 +51,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=X01BD PRODUCT_NAME=X01BD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ3A.190605.003 5524043 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ3A.190705.001 5565753 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/crosshatch/crosshatch:9/PQ3A.190605.003/5524043:user/release-keys"
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:9/PQ3A.190705.001/5565753:user/release-keys"
