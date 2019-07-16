@@ -1,0 +1,20 @@
+[
+ {
+   "remote": "evo-devices",
+   "repository": "device_asus_X01BD",
+   "target_path": "device/asus/X01BD",
+   "branch": "pie"
+ },
+   {
+   "remote": "evo-devices",
+   "repository": "vendor_asus_X01BD",
+   "target_path": "vendor/asus/X01BD",
+   "branch": "pie"
+ },
+    {
+   "remote": "evo-devices",
+   "repository": "kernel_asus_sdm660",
+   "target_path": "kernel/asus/sdm660",
+   "branch": "pie"
+ }
+]
