@@ -21,6 +21,17 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Ambient Play
+ION_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.pixelexperience.version=PixelExperience_$(ION_BUILD)-9.0-$(ION_BUILD_DATE)-OFFICIAL \
+    org.pixelexperience.build_date=$(ION_BUILD_DATE) \
+    org.pixelexperience.build_type=OFFICIAL \
+    org.pixelexperience.fingerprint=PixelExperience/9.0/$(ION_BUILD)/$(ION_BUILD_DATE) \
+    org.pixelexperience.device=$(ION_BUILD)
+
+export TARGET_G_ARCH=arm64
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
