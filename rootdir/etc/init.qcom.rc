@@ -79,10 +79,8 @@ on early-boot
 
     # Huaqin modify for ZQL1820P1-98 by wobo at 2018/11/19 start
     chown root system /dev/input/event3
-    chgrp system /dev/input/event3
 
     chown root system /dev/input/event4
-    chgrp system /dev/input/event4
     # Huaqin modify for ZQL1820P1-98 by wobo at 2018/11/19 end
 
     chown system system /mnt/vendor/persist/sensors
