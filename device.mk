@@ -461,6 +461,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml2
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    device/asus/X01BD
+
 # USB
 PRODUCT_PACKAGES += \
 	android.hardware.usb@1.0-service.basic
