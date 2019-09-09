@@ -510,4 +510,8 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    ZenfoneParts
 
+#RRO Targets
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
