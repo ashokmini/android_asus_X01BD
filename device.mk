@@ -186,8 +186,8 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    AsusDoze
+#PRODUCT_PACKAGES += \
+#    AsusDoze
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -507,7 +507,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 # ZenfoneParts
-PRODUCT_PACKAGES += \
-    ZenfoneParts
+#PRODUCT_PACKAGES += \
+#    ZenfoneParts
 
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
