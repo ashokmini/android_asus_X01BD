@@ -557,6 +557,23 @@ service smcinvoked /system/bin/smcinvoked
    user system
    group system
 
+# Logcat
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
+
 # Huaqin modify for ZQL1820-1234 by lanshiming at 2018/11/13 start
 # For user build, we don't want the phone die when KE occur
 # Just reboot it
