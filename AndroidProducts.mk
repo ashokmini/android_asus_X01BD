@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_X01BD.mk
+    $(LOCAL_DIR)/potato_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_X01BD-userdebug
+    potato_X01BD-userdebug
