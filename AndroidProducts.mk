@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_X01BD.mk
+    $(LOCAL_DIR)/atom_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_X01BD-userdebug
+    atom_X01BD-userdebug
